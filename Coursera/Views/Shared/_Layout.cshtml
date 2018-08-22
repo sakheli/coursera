@@ -4,38 +4,450 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
+    <script src="~/Scripts/gulpfile.js"></script>
+
+    @*<link rel="stylesheet" href="Content/node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="Content/sass/main.css">
+            <link rel="stylesheet" href="Content/sass/fonts/typography.css">
+            <link rel="stylesheet" href="Content/css/site.css">*@
+
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/Content/bootstrap")
+        @Scripts.Render("~/Content/Js")*@
     @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="~/Content/node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/sass/main.css">
+
+    <!-- SCRIPTS -->
+    <script src="~/Content/node_modules/jquery/dist/jquery.js"></script>
+    <script src="~/Content/javascript/main.js"></script>
+    <script src="~/Content/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                    @Html.Partial("_LoginPartial")
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+        </div>*@
+
+
+    <nav id="nav" class="navigation_bar fixed-top">
+        <div class="navigation__logo logo">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 28.5 28" style="enable-background:new 0 0 28 28;" xml:space="preserve">
+            
+            <style type="text/css">
+                .st0 {
+                    display: none;
+                }
+
+                .st1 {
+                    display: inline;
+                    fill: none;
+                }
+
+                .st2 {
+                    fill: #3FA9F5;
+                }
+
+                .st3 {
+                    fill: #393E46;
+                }
+</style>
+            <a class="btn__sign" href="@Url.Action("Index", "Home")">
+
+            <g>
+            <g id="canvasGrid" class="st0">
+            <rect class="st1" width="28.5" height="28" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </g>
+            </g>
+            <g>
+            <title>Layer 1</title>
+            <g id="svg_10">
+            <rect id="svg_5" x="-0.1" y="11" class="st2" width="28.7" height="5.6" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <polygon id="svg_6" class="st3" points="18.2,16.6 21.7,11 24.6,11 21.1,16.6 28.6,16.6 28.6,-0.2 		" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <polygon id="svg_7" class="st3" points="21.1,16.6 18.2,16.6 21.7,11 14.2,11 6.8,11 10.3,16.6 7.3,16.6 3.9,11 14.2,27.7
+                    24.6,11 		" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <polygon id="svg_8" class="st3" points="6.8,11 10.3,16.6 -0.1,-0.2 -0.1,16.6 7.3,16.6 3.9,11 		" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </g>
+            </g>
+            </a>
+            </svg>
+
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+
+        <div class="categories">
+            <img src="~/Content/img/SVG/category_icon.svg" alt="" class="mx-5" width="50em" style="margin-right:5px !important;"> <h2>category</h2>
+        </div>
+
+        <div class="navigation__search text-center search">
+            <svg class="search_icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 68 70.8" style="enable-background:new 0 0 68 70;" xml:space="preserve">
+            <style type="text/css">
+                .circle_svg {
+                    fill: none;
+                    stroke: #222831;
+                    stroke-width: 8;
+                    stroke-miterlimit: 10;
+                }
+
+                .stroke1_svg {
+                    fill: #222831;
+                }
+
+                .stroke2_svg {
+                    fill: #393E46;
+                }
+</style>
+            <title>magnifieng_glass</title>
+            <g>
+            <circle class="circle_svg" cx="26.5" cy="27.3" r="22.5" />
+
+
+
+
+
+
+
+            <path class="stroke1_svg" d="M66.7,67.4L66.7,67.4c-1.3,1.3-3.1,1.7-4,0.9L41.2,44.4l2.7-2.7l23.6,21.7C68.4,64.3,68,66.1,66.7,67.4z" />
+
+
+
+
+
+
+
+            <path class="stroke2_svg" d="M29.7,41.7c0,0-14-0.2-14.5-13.9c-1.9-2.5-3.8-1.1-3.8-1.1s-2.2,1.2-1.3,4.2C10.9,34,15.1,46,29.7,41.7z" />
+
+
+
+
+
+
+
+       </g>
+       </svg>
+            <input class="search_input text-center" type="search" placeholder="search" aria-label="search">
+        </div>
+
+
+        @Html.Partial("_LoginPartial")
+    </nav>
+
+
+
+    @RenderBody()
+
+    @* @if (!Request.IsAuthenticated) {
+            <!-- Login -->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    *@@*@Html.Action("Login", "Account")*@@*
+
+        @Html.Partial("../Account/Login")
+        </div>
+        }*@
+    <footer></footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

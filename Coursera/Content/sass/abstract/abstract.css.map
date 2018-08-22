@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "_functions.scss",
+        "_veriables.scss",
+        "_mixisns.scss"
+
+    ],
+    "names": [],
+    "file": "abstract.css"
+}

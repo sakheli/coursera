@@ -1,0 +1,25 @@
+.video__grid{
+    display: grid;
+    grid-column-gap: 5rem;
+    grid-template-areas: 
+            "video__categories video__list"
+            "video__categories video__list"
+            "video__categories video__list";
+} 
+
+
+ 
+
+.comertial__grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+ 
+.sponsors__grid{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    grid-auto-rows: 10rem;
+}

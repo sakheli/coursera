@@ -6,8 +6,19 @@ using System.Web.Mvc;
 
 namespace Coursera.Controllers {
     public class HomeController : Controller {
+        [AllowAnonymous]
         public ActionResult Index() {
-            return View();
+
+            if (Request.IsAuthenticated) {
+                return View();
+            } else {
+                return View("Welcome");
+            }
+        }
+
+        [AllowAnonymous]
+        public ActionResult Welcome() {
+                return View();
         }
 
         public ActionResult About() {

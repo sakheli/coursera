@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "Video";
+}
+
+
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+
+
+<main>
+    <div class="profile">
+        <section class="video__section text-center">
+            <h1>Course name and short intro name</h1>
+            <br />
+
+            <div id="player"></div>
+        </section>
+        <div class="btn bg-white btn-outline-info text-dark text-center btn__join">
+            @* data-toggle="modal" data-target="#registerModal">*@
+            <a href="@Url.Action("Register", "Account")">
+
+                <div class="display-4 button__big">Join us for free</div>
+            </a>
+        </div>
+    </div>
+</main>
+
+
+
+
+
+
+
+
+
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+    var tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // 3. This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    var player;
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '360',
+            width: '640',
+            videoId: '_IpqlxIqe9g',
+            playerVars: {
+                'autoplay': 1,
+                'controls': 1,
+                'rel': 0,
+                'showinfo': 0,
+                'modestbranding': 0,
+                'iv_load_policy': 3,
+                'disablekb': 1
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onStateChange': onPlayerStateChange,
+            }
+        });
+    }
+
+    // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+        event.target.playVideo();
+    }
+
+    function onPlayerStateChange(event) {
+
+    }
+    function stopVideo() {
+        player.stopVideo();
+    }
+
+</script>

@@ -18,10 +18,20 @@ namespace Coursera {
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
+                      "~/Content/node_modules/bootstrap/dist/js/bootstrap.bundle.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/Content/bootstrap").Include(
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/respond.js"));
+
+            bundles.Add(new ScriptBundle("~/Content/Js").Include(
+                      "~/Content/javascript/main.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
+                      "~/Content/css/bootstrap.min.css",
+                      "~/Content/css/main.css",
+                      "~/Content/sass/main.css",
                       "~/Content/site.css"));
         }
     }

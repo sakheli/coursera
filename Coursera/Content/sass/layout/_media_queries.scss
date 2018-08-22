@@ -1,0 +1,41 @@
+@media (min-width : 280px)  and (max-width: 768px) {
+    .video__grid{
+        grid-template-areas: 
+                "video__categories"
+                "video__list";
+
+        .video__categories{
+            padding: 0;
+        } 
+
+        .video__categories li{
+            text-align: center !important;
+        }
+
+        .video__list{
+            text-align: center; 
+        }
+    }  
+    
+    
+    
+    .comertial__grid{
+        grid-template-columns: 1fr;
+        
+        .comertial__cell_container{
+            padding: 1rem;
+        }
+        .comertial__cell_container:nth-child(odd){
+            border-right: none;
+        }
+    } 
+ 
+    
+
+
+
+    .review .carousel-item {
+        text-align: center;
+        padding: 0rem;
+    }
+}

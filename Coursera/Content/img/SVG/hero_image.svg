@@ -1,0 +1,52 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 990" style="enable-background:new 0 0 1920 990;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{filter:url(#Adobe_OpacityMaskFilter);}
+	.st2{fill:url(#SVGID_3_);}
+	.st3{mask:url(#SVGID_2_);}
+	.st4{fill:none;}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="598.3318" y1="1401.1396" x2="1332.4774" y2="-438.2317">
+		<stop  offset="0" style="stop-color:#0085B5"/>
+		<stop  offset="0.1435" style="stop-color:#0487B6"/>
+		<stop  offset="0.275" style="stop-color:#0F8CB9"/>
+		<stop  offset="0.4019" style="stop-color:#2194BD"/>
+		<stop  offset="0.5259" style="stop-color:#3C9FC3"/>
+		<stop  offset="0.6478" style="stop-color:#5DAECB"/>
+		<stop  offset="0.7682" style="stop-color:#87C0D5"/>
+		<stop  offset="0.885" style="stop-color:#B7D6E1"/>
+		<stop  offset="1" style="stop-color:#EEEEEE"/>
+	</linearGradient>
+	<path class="st0" d="M762,0c0,0,66,158.6,615,158.6s543,262.2,543,262.2V990H0V0H762z"/>
+	<defs>
+		<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="0.5" y="0" width="2521" height="1106.8">
+			<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+		</filter>
+	</defs>
+	<mask maskUnits="userSpaceOnUse" x="0.5" y="0" width="2521" height="1106.8" id="SVGID_2_">
+		<g class="st1">
+			<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="961.4883" y1="507.5634" x2="1623.0216" y2="644.2274">
+				<stop  offset="0" style="stop-color:#000000"/>
+				<stop  offset="1" style="stop-color:#FFFFFF"/>
+			</linearGradient>
+			<rect x="419.5" y="110.9" class="st2" width="1501" height="879.4"/>
+		</g>
+	</mask>
+	<g class="st3">
+		<defs>
+			<path id="SVGID_4_" d="M762.5,0c0,0,66,158.6,615,158.6s543,262.3,543,262.3v569.4H0.5V0H762.5z"/>
+		</defs>
+		<clipPath id="SVGID_5_">
+			<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+		</clipPath>
+		<g transform="matrix(1 0 0 1 0 0)" style="clip-path:url(#SVGID_5_);">
+			
+				<image style="overflow:visible;" width="1920" height="1080" xlink:href="AA3A8682.jpg"  transform="matrix(1 0 0 0.917 601.4987 116.451)">
+			</image>
+		</g>
+	</g>
+	<path class="st4" d="M762.5,0c0,0,66,158.6,615,158.6s543,262.3,543,262.3v569.4H0.5V0H762.5z"/>
+</g>
+</svg>

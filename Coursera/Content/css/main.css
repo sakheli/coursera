@@ -1,0 +1,82 @@
+@keyframes hero__icons_animation {}body {
+  background-color: #f2f2f2; }
+
+.btn {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 75%;
+  left: 50%;
+  padding: 1% 5%;
+  border-radius: 100px !important;
+  margin-top: 3%; }
+
+.navigation_bar {
+  padding: 1.5% 8%; }
+  .navigation_bar * {
+    display: inline-block; }
+  .navigation_bar .logo {
+    width: 6%; }
+
+.search {
+  position: absolute;
+  width: 4%;
+  height: auto;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%); }
+  .search input {
+    opacity: 0; }
+
+.sign_in {
+  float: right;
+  color: #393e46; }
+  .sign_in span {
+    border-bottom: 3px solid; }
+
+.hero {
+  height: 100vh;
+  background-image: url("/img/SVG/hero_image.svg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .hero svg {
+    z-index: -50; }
+  .hero .hero__icons {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 45.1%;
+    margin-top: 2.1%; }
+    .hero .hero__icons .hero__icon {
+      margin-left: 10%;
+      display: inline-block;
+      width: 8%; }
+  .hero .hero__slogan {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 50%;
+    width: 100%;
+    color: white; }
+
+.card-body {
+  padding: 5rem !important; }
+
+/* nav{
+    font-size: calc(14px + (17 - 14) * ((100vw - 300px) / (1700 - 700)))!important;
+}
+
+/* body {
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+} */
+.display-3 {
+  font-size: calc(24px + (70 - 24) * ((100vw - 300px) / (1900 - 700))) !important;
+  font-family: 'Lato';
+  font-weight: 400;
+  -webkit-text-stroke: 1px #0186b5; }
+
+.display-4 {
+  font-size: calc(24px + (40 - 24) * ((100vw - 300px) / (1900 - 700)));
+  font-family: 'Lato';
+  font-weight: 400; }

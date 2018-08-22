@@ -1,0 +1,41 @@
+@import "abstract/_veriables";
+@import "abstract/_mixins"; 
+
+
+@import "keyframes/keyframes.scss";
+
+@import "base/_base.scss";
+@import "base/_animations.scss";
+@import "base/_utilities.scss"; 
+         
+@import "components/_button.scss"; 
+@import "components/_hero.scss";
+@import "components/_nav.scss";
+@import "components/_card.scss";
+         
+@import "pages/_home.scss";
+@import "pages/_profile.scss";
+   
+@import "layout/_grids.scss"; 
+@import "layout/_media_queries.scss";  
+  
+@import "fonts/typography.scss";   
+
+      
+
+ 
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+

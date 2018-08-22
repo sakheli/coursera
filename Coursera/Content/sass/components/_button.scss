@@ -1,0 +1,55 @@
+.btn__join {
+    position: absolute;
+    @include centerlize();
+    top: 75%;
+    left: 50%;
+    padding: 1% 5%;
+    border-radius: 100px !important;
+    margin-top: 3%;
+    transition: all 0.2s ease;
+
+    &:hover {
+        transform: scale(2);
+        @include centerlize;
+        box-shadow: 0 0 7px #ffffff;
+        background-color: #0186b5 !important;
+        color: #f2f2f2 !important;
+        transform-origin: center;
+
+        a {
+            &:hover {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    a {
+        color: black;
+        border: none;
+    }
+}
+
+
+
+.btn__sign {
+    color: black;
+    border: none;
+    padding-bottom: 5px;
+
+    &:hover {
+        color: black;
+        border-bottom: 5px solid black;
+        text-decoration: none;
+
+        span {
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+    }
+
+    span {
+        padding-bottom: 5px;
+        border-bottom: 5px solid black;
+    }
+}

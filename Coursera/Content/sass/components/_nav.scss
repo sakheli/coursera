@@ -1,0 +1,58 @@
+//////////////////////////OVERAL NAVIGATION
+.navigation_bar{
+    padding: 1.5% 6%;
+
+    *{
+        display: inline-block;
+    }
+
+    .logo {
+        width: 5%;
+    }
+}
+
+
+
+//////////// SEARCH-BAR AND MAGNIFIENGCLASS
+.search{
+    position: absolute;
+    width: 3%;
+    left: 48%;
+    cursor: pointer;
+
+
+
+    input{
+        position: relative;
+        transform: translate(-37%,-84%) !important;
+        padding: 0.31rem;
+        opacity: 0;
+        z-index: -5;
+ 
+        background: -moz-linear-gradient(top, #1e579900 0%, #e5e5e5 500%); 
+        background: -webkit-linear-gradient(top, #1e579900 0%,#e5e5e5 500%); 
+        background: linear-gradient(to bottom, #1e579900 0%,#e5e5e5 500%);
+        border: none;
+        border-bottom: 2px solid $white;
+        color: white;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+        
+    }
+}
+
+
+
+
+
+////////////SIGN IN BUTTON
+.sign_in{
+    float: right;
+    color: $dark-primary-dark;
+
+    span{
+        border-bottom: 3px solid;
+    }
+}
+
+

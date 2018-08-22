@@ -1,0 +1,41 @@
+.profile{
+
+    a{
+        color: $dark-primary-dark;
+        
+    }
+
+    &__img{
+        position: relative;
+        margin: 0 auto;
+        top: 20vh; 
+        max-width: 80rem;
+        margin-bottom: 3em;
+    }
+
+    &__tabs{
+        display: inline-block;
+        position: relative;
+        @include centerlize; 
+        left: 49.5%;
+        top: 16vh;   
+         
+
+        ul{
+            padding: 0; 
+            li{
+                display: inline-block;
+
+                &:nth-child(3){
+                    margin-left: 10vw !important;
+                }
+ 
+                &:not(:nth-child(1)){
+                    margin-left: 4vw; 
+                }
+            }
+        }
+    }
+
+
+}

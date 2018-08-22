@@ -1,0 +1,18 @@
+{
+  "name": "georgiancoursera",
+  "version": "1.0.0",
+  "description": "online video tutorial site like udemy or lynda.com",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass Content/sass/main.scss Content/main.css -w"
+  },
+  "author": "moris khucishvili and robinzon sokhashvili",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
+  }
+}
